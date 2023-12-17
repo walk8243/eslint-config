@@ -5,7 +5,8 @@ module.exports = {
     },
     extends: [
         'eslint:recommended',
-        'plugin:@typescript-eslint/recommended'
+        'plugin:@typescript-eslint/recommended',
+        'plugin:prettier/recommended'
     ],
     overrides: [
         {
@@ -31,6 +32,13 @@ module.exports = {
     rules: {
         'no-used-vars': 'off',
         '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-		'@typescript-eslint/quotes': ['error', 'single']
+		'@typescript-eslint/quotes': ['error', 'single'],
+        'prettier/prettier': [
+			'error',
+			{
+				singleQuote: true,
+				useTabs: true,
+			},
+		],
     }
 }
