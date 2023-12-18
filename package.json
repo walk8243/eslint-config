@@ -1,6 +1,6 @@
 {
   "name": "@walk8243/eslint-config",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "walk8243のためのESLintのshareable configsを作る",
   "main": "index.js",
   "scripts": {},
