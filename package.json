@@ -8,17 +8,15 @@
   "author": "walk8243 <walk8243@gmail.com> (https://walk8243.xyz/)",
   "license": "MIT",
   "devDependencies": {
-    "@tsconfig/node18": "^18.2.2",
-    "@types/node": "^20.10.4",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "prettier": "^3.1.1",
-    "typescript": "^5.3.3"
+    "prettier": "^3.1.1"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0"
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
   }
 }
