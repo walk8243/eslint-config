@@ -1,3 +1,3 @@
 module.exports = {
-	extends: ['@walk8243/eslint-config-walk8243'],
+	extends: ['@walk8243'],
 }
