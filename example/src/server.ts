@@ -7,7 +7,8 @@ server.listen(3000, () => {
 	if (address === null) {
 		return;
 	}
-	console.log(`Server is listening on port ${server.address()?.toString()}`);
+	console.log('Server is listening on port 3000');
+	console.log('Browser access to http://localhost:3000/');
 });
 
 process
