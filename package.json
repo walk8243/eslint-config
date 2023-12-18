@@ -7,6 +7,10 @@
   "keywords": [],
   "author": "walk8243 <walk8243@gmail.com> (https://walk8243.xyz/)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/walk8243/eslint-config.git"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
