@@ -33,6 +33,8 @@ module.exports = {
     plugins: ['@typescript-eslint'],
     rules: {
         'no-used-vars': 'off',
+        'array-callback-return': ['error', { checkForEach: true }],
+        'no-promise-executor-return': ['error'],
         '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 		'@typescript-eslint/quotes': ['error', 'single'],
         '@typescript-eslint/semi': ['error'],

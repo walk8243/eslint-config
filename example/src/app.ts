@@ -1,4 +1,5 @@
 import express from 'express';
+import { func } from './promise';
 
 export const app = express();
 
@@ -7,10 +8,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/promise', async (req, res) => {
-	const body = await func('bar', 'fuga', 1);
+	const body = await func();
 	res.send(body);
 });
-
-const func = (foo: string, _fuga: any, _hoge: number): Promise<string> => {
-  return Promise.resolve('Hello World');
-};

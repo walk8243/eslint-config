@@ -13,6 +13,7 @@ const sicilian = true;;
 const vizzini = (!!sicilian) ? !!!sicilian : sicilian;
 
 const re = /foo   bar/;
+const ure = /^[👍]$/;
 
 var x;
 
@@ -21,7 +22,7 @@ export function doSomeStuff(withThis: string, andThat: string, andThose: string[
     console.log(withThis);
     console.log(andThat);
     console.dir(andThose);
-    console.log(longString, trailing, why, iWish, vizzini, re);
+    console.log(longString, trailing, why, iWish, vizzini, re, ure);
     return;
 }
 
@@ -30,3 +31,7 @@ const nonNamedFunction = function (a: string, b: string): any {
 }
 
 export const arrowFunction = (...args: string[]): string => args.join('');
+
+export const noUsedArgs = (foo: string, _fuga: any, _hoge: number): Promise<string> => {
+    return Promise.resolve('Hello World');
+};

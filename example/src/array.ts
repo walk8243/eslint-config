@@ -3,3 +3,10 @@ export const indexMap = (arr: string[]) => {
 		memo[item] = index;
 	}, {});
 };
+
+export const loggingArr = (arr: string[]) => {
+	arr.forEach((item) => {
+		console.log(item);
+		return item;
+	});
+};
