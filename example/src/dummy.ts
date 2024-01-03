@@ -25,8 +25,8 @@ export function doSomeStuff(withThis: string, andThat: string, andThose: string[
     return;
 }
 
-const nonNamedFunction = function (a: string, b: string) {
+const nonNamedFunction = function (a: string, b: string): any {
 	return a + b;
 }
 
-export const arrowFunction = (...args: string[]) => args.join('');
+export const arrowFunction = (...args: string[]): string => args.join('');

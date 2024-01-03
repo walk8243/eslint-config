@@ -1,8 +1,10 @@
 import http from 'node:http';
 import { app } from './app';
 
+let port = 3000;
+
 const server = http.createServer(app);
-server.listen(3000, () => {
+server.listen(port, () => {
 	const address = server.address();
 	if (address === null) {
 		return;
