@@ -1,4 +1,5 @@
 import express from 'express';
+import './typeof';
 import { func } from './promise';
 
 export const app = express();

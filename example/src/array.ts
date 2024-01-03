@@ -6,7 +6,11 @@ export const indexMap = (arr: string[]) => {
 
 export const loggingArr = (arr: string[]) => {
 	arr.forEach((item) => {
-		console.log(item);
 		return item;
 	});
 };
+
+(() => {
+	Array();
+	Array(0, 1, 2);
+})();
