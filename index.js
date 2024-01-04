@@ -42,9 +42,11 @@ module.exports = {
         'prefer-regex-literals': ['error', { disallowRedundantWrapping: true }],
         'sort-imports': ['error', { memberSyntaxSortOrder: ['single', 'all', 'multiple', 'none'] }],
         'arrow-body-style': ['warn', 'as-needed'],
+        'prefer-arrow-callback': ['error'],
         '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 		'@typescript-eslint/quotes': ['error', 'single'],
         '@typescript-eslint/semi': ['error'],
-        '@typescript-eslint/no-unnecessary-condition': ['off']
+        '@typescript-eslint/no-unnecessary-condition': ['off'],
+        '@typescript-eslint/default-param-last': ['error'],
     },
 }

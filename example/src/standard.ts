@@ -42,6 +42,8 @@ export const arrowFunction = (...args: string[]): string => args.join('');
 export const noUsedArgs = (foo: string, _fuga: any, _hoge: number): Promise<string> => 
     Promise.resolve('Hello World');
 
+export const defaultArgs = (a: number, b?: number, c: number) => a + (b ?? 0) + c;
+
 () => {
 	return 0;
 };
