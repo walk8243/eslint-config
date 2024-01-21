@@ -1,6 +1,5 @@
 module.exports = {
     env: {
-        browser: true,
         es2021: true,
     },
     extends: [
@@ -82,4 +81,4 @@ module.exports = {
         '@typescript-eslint/require-array-sort-compare': ['error'],
         '@typescript-eslint/sort-type-constituents': ['error'],
     },
-}
+};

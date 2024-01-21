@@ -4,7 +4,9 @@
   "description": "walk8243のためのESLintのshareable configsを作る",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "node.js",
+    "browser.js"
   ],
   "scripts": {},
   "keywords": [],
