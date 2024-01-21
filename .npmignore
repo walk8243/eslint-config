@@ -1,9 +1,0 @@
-### Node.js ###
-node_modules/
-walk8243-eslint-config-*.tgz
-
-### GitHub ###
-.github/
-
-### Example ###
-example/
