@@ -19,28 +19,28 @@ var x;
 
 export function doSomeStuff(withThis: string, andThat: string, andThose: string[]) {
     if (!Boolean(andThose.length)) { return {}; }
-    return {
-        withThis,
-        andThat,
-        andThose,
-        longString,
-        trailing,
-        why,
-        iWish,
-        vizzini,
-        re,
-        ure,
-    };
+	return {
+		withThis,
+		andThat,
+		andThose,
+		longString,
+		trailing,
+		why,
+		iWish,
+		vizzini,
+		re,
+		ure,
+	};
 }
 
 const nonNamedFunction = function (a: string, b: string): any {
-    return a + b;
+	return a + b;
 };
 
 export const arrowFunction = (...args: string[]): string => args.join('');
 
-export const noUsedArgs = (foo: string, _fuga: any, _hoge: number): Promise<string> => 
-    Promise.resolve('Hello World');
+export const noUsedArgs = (foo: string, _fuga: any, _hoge: number): Promise<string> =>
+	Promise.resolve('Hello World');
 
 export const defaultArgs = (a: number, b?: number, c: number) => a + (b ?? 0) + c;
 
@@ -49,14 +49,14 @@ export const defaultArgs = (a: number, b?: number, c: number) => a + (b ?? 0) + 
 };
 
 (() => {
-    if (vizzini) {}
+	if (vizzini) { }
 
-    Object();
-    new Object();
-    Object('foo');
-    (Object: object) => new Object();
+	Object();
+	new Object();
+	Object('foo');
+	(Object: object) => new Object();
 
-    '\"';
-    '\e';
-    /\@/;
+	'\"';
+	'\e';
+	/\@/;
 })();

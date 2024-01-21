@@ -14,3 +14,7 @@ export const loggingArr = (arr: string[]) => {
 	Array();
 	Array(0, 1, 2);
 })();
+
+const array: string[] = ['a', 'b', 'c'];
+array.sort();
+array.sort((a, b) => a.localeCompare(b));

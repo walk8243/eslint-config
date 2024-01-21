@@ -15,3 +15,6 @@
 	const flag = 'g';
 	RegExp('abc', flag);
 })();
+
+'something'.match(/thing/);
+/thing/.exec('something');

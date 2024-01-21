@@ -5,8 +5,14 @@ export const func = () => {
 	return new Promise<string>(r => r('Hello World'));
 };
 
-(async () => {
+(async() => {
 	Promise.resolve(1)
 		.then(() => 'completed')
 		.catch(() => 'failed');
 })();
+
+const arrowFunctionReturnsPromise = () => Promise.resolve('value');
+
+function functionReturnsPromise() {
+  return Promise.resolve('value');
+}
