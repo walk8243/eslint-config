@@ -1,0 +1,79 @@
+// @ts-check
+
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import prettierConfig from 'eslint-config-prettier';
+import stylisticTs from '@stylistic/eslint-plugin-ts';
+
+export default tseslint.config(
+	eslint.configs.recommended,
+	tseslint.configs.strictTypeChecked,
+	tseslint.configs.stylisticTypeChecked,
+	prettierConfig,
+	{
+		plugins: {
+			'@stylistic/ts': stylisticTs
+		},
+
+		languageOptions: {
+			globals: {
+				MyGlobal: true,
+			},
+			parserOptions: {
+				projectService: true,
+				tsconfigRootDir: import.meta.dirname,
+			},
+		},
+
+		rules: {
+			'no-used-vars': 'off',
+			'default-param-last': 'off',
+			'init-declarations': 'off',
+			'max-params': 'off',
+			'no-dupe-class-members': 'off',
+			'no-invalid-this': 'off',
+			'no-loop-func': 'off',
+			'no-magic-numbers': 'off',
+			'no-redeclare': 'off',
+			'no-use-before-define': 'off',
+			'arrow-body-style': ['warn', 'as-needed'],
+			'array-callback-return': ['error', { checkForEach: true }],
+			'logical-assignment-operators': ['error', 'never'],
+			'no-console': ['error'],
+			'no-object-constructor': ['error'],
+			'no-promise-executor-return': ['error'],
+			'no-unsafe-negation': ['error'],
+			'prefer-arrow-callback': ['error'],
+			'prefer-named-capture-group': ['error'],
+			'prefer-regex-literals': ['error', { disallowRedundantWrapping: true }],
+			'sort-imports': ['error', { memberSyntaxSortOrder: ['single', 'all', 'multiple', 'none'] }],
+			'valid-typeof': ['error', { requireStringLiterals: true }],
+			'@stylistic/ts/indent': ['error', 'tab'],
+			'@stylistic/ts/quotes': ['error', 'single'],
+			'@stylistic/ts/semi': ['error'],
+			'@stylistic/ts/space-before-blocks': ['error'],
+			'@stylistic/ts/space-before-function-paren': ['error', { 'anonymous': 'always', 'named': 'never', 'asyncArrow': 'always' }],
+			'@stylistic/ts/type-annotation-spacing': ['error'],
+			'@typescript-eslint/default-param-last': ['error'],
+			'@typescript-eslint/consistent-type-exports': ['error'],
+			'@typescript-eslint/consistent-type-imports': ['error'],
+			'@typescript-eslint/explicit-member-accessibility': ['error', { accessibility: 'no-public' }],
+			'@typescript-eslint/init-declarations': ['error'],
+			'@typescript-eslint/max-params': ['error'],
+			'@typescript-eslint/method-signature-style': ['error'],
+			'@typescript-eslint/no-dupe-class-members': ['error'],
+			'@typescript-eslint/no-invalid-this': ['error'],
+			'@typescript-eslint/no-loop-func': ['error'],
+			'@typescript-eslint/no-unnecessary-condition': ['off'],
+			'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+			'@typescript-eslint/no-magic-numbers': ['error', { ignore: [0, 1], ignoreEnums: true, ignoreNumericLiteralTypes: true, ignoreReadonlyClassProperties: true, ignoreTypeIndexes: true, enforceConst: true, ignoreDefaultValues: true }],
+			'@typescript-eslint/no-redeclare': ['error'],
+			'@typescript-eslint/no-use-before-define': ['error'],
+			'@typescript-eslint/no-useless-empty-export': ['error'],
+			'@typescript-eslint/prefer-regexp-exec': ['error'],
+			'@typescript-eslint/promise-function-async': ['error'],
+			'@typescript-eslint/require-array-sort-compare': ['error'],
+			'@typescript-eslint/sort-type-constituents': ['error'],
+		},
+	},
+);
