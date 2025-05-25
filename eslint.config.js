@@ -1,4 +1,6 @@
+// @ts-check
 import eslint from '@eslint/js';
+import globals from 'globals';
 import prettierConfig from 'eslint-config-prettier';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
 import tseslint from 'typescript-eslint';
@@ -16,6 +18,8 @@ export default tseslint.config(
 		languageOptions: {
 			globals: {
 				MyGlobal: true,
+				...globals.node,
+				...globals.browser,
 			},
 			parserOptions: {
 				projectService: true,
